@@ -1,0 +1,130 @@
+
+nav{
+    border-top-color: pink;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-bottom-color: grey;
+    border-bottom-width: 0.5px;
+    border-bottom-style:solid;
+}
+.nav-flex{
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.nav-flex a:hover{
+    color: pink;
+    transition: 1s;
+}
+.navigation {
+    flex:2;
+    margin: 5px;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 10px;
+    padding-left: 0%;
+    padding-right: 0%;
+    color: grey;
+    text-decoration: none ;
+    text-align: center;
+}
+.about{
+    display: flex; 
+    padding-top: 3%;
+    padding-bottom:3%;
+}
+.right-side, .left-side{
+    padding-top:2%;
+    padding-bottom:35%;
+}
+.right-side{
+    flex:9; 
+    border-left-width:0.5px;
+    border-left-style: solid;
+    padding-left: 3%;
+    padding-right: 8%;
+}
+.left-side{
+    flex:3;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+img.rounded {
+    object-fit: cover; 
+    object-position: 70% 0;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+  }
+footer{
+    display:flex;
+    justify-content: center;
+    border-top-color: grey;
+    border-top-width: 0.5px;
+    border-top-style: solid;
+}
+.titlepage{
+    color: grey;
+    font-style: inherit;
+}
+h2{
+    margin-bottom:2%;
+    margin-top: 5%;
+}
+h3{
+    color:grey;
+    margin-bottom:0%;
+    margin-top:0%;
+}
+.email{
+    font-size: small;
+}
+#page {
+    height:0%;
+    width:100%;
+    margin:0;
+    padding:0;
+    margin-top: 5%;
+}
+.right-aligned{
+    text-align: right;
+}
+.left-aligned{
+    text-align: left;
+}
+.smallmessage{
+    color: grey;
+    font-size: small;
+    margin-top: 10%;
+}
+.progress{
+    width:100%
+}
+ul{
+    list-style-type:none;
+}
+ul.dashed >li{
+    text-indent: -20px;
+}
+ul.dashed>li:before{
+    content: "-";
+    text-indent: -20px;
+}
+li{
+    margin:2%;
+}
+@media only screen and (max-width:600px){
+    .about{
+        flex-direction:column;
+    }
+    .right-side{
+        border-left:0;
+        padding-top:0;
+    }
+    .left-side{
+        padding-bottom:0;
+    }
+    
+}
